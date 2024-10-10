@@ -2,11 +2,11 @@ def main() -> None:
     info = input("Enter name of the file: ")
     word = ""
     while True:
-        contents = input("Enter new line of content: ")
-        if contents == "stop":
+        input_content = input("Enter new line of content: ")
+        if input_content == "stop":
             break
         else:
-            word += f"{contents}\n"
+            word += f"{input_content}\n"
 
     with open(f"{info}.txt", "a") as f:
         f.write(word)
