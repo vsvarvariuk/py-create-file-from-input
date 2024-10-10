@@ -9,7 +9,7 @@ def main() -> None:
             word += f"{contents}\n"
 
     with open(f"{info}.txt", "a") as f:
-        f.write(content)
+        f.write(word)
 
 
 if __name__ == "__main__":
